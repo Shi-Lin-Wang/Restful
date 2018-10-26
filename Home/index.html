@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <title>Sign In</title>
+        <!-- Bootstrap core CSS -->
+        <link rel ="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+        <!-- Custom styles for this template -->
+        <link href="index.css" rel="stylesheet">
+        <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.2.1.min.js"></script>
+        <!--script src="index.js"></script-->
+    </head>
+
+  <body onload="checkLoginState()">
+
+    <div class="container">
+      <!-- http://kappatseng.sytes.net:8081/wtlab/Home/jwt/tests/signin.php -->
+      <form class="form-signin" action="http://127.0.0.1/Restful/Home/jwt/tests/signin.php" method="POST">
+        <h2 class="form-signin-heading">Please sign in</h2>
+        <label for="Account" class="sr-only">Account</label>
+        <input id="Account" name="Account" class="form-control" placeholder="Account" required autofocus>
+        <label for="Password" class="sr-only">Password</label>
+        <input type="password" id="pwd" name="Password" class="form-control" placeholder="Password" required>
+        <div class="checkbox">
+          <label>
+          </label>
+        </div>
+        <button class="btn btn-lg btn-primary btn-block" type="submit">Sign in</button>
+        <div class="btn btn-lg btn-primary btn-block" onclick="document.getElementById('signup-pop').style.display='block'">Sign up</div>
+      </form>
+
+    </div> <!-- /container -->
+    <div id="signup-pop" class="modal">
+    	<form class="modal-content" action="http://127.0.0.1/Restful/Home/jwt/tests/register.php" method="POST">
+    		<div class="container">
+    			<label><h3>Account</h3></label>
+    			<input type="text" placeholder="Enter Account" name="signup-acc" required>
+
+    			<label><h3>Password</h3></label>
+      			<input type="password" placeholder="Enter Password" name="signup-pwd" required>
+
+      			<label><h3>Repeat Password</h3></label>
+      			<input type="password" placeholder="Repeat Password" name="signup-repeatPwd" required>
+
+			    <label><h3>Email</h3></label>
+				<input type="email" placeholder="Enter Email" name="signup-email" required>
+
+				<div class="signup-btn">
+				<button type="submit" name="signup-confirm" class="btn-confirm">Sign Up</button>
+			 	<button type="button" onclick="document.getElementById('signup-pop').style.display='none'" name="signup-cancel" class="btn-cancel">Cancel</button>
+			 	</div>
+        		
+    		</div>
+    	</form>
+    </div>
+  </body>
+</html>

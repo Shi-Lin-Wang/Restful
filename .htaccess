@@ -1,0 +1,12 @@
+﻿# 開啟 rewrite 功能
+Options +FollowSymlinks
+RewriteEngine on
+
+
+# 重寫規則
+RewriteRule ^signin/$   Home/jwt/tests/signin.php? [nc,qsa]
+
+RewriteRule ^index/$   Home/index.html? [nc,qsa]
+
+RewriteRule ^register/$    Home/jwt/tests/register.php? [nc,qsa]
+

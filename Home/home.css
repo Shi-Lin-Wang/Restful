@@ -1,0 +1,146 @@
+body {
+	margin: 0;
+	text-align: center;
+	}
+#sensorbar {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	background-color: #C0C0C0;
+	}
+
+#sensorbar li {
+	float: left;
+	}
+
+#sensorbar li a {
+	display: block;
+	color: black;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+	}
+
+#sensorbar li a:hover {
+	background-color: #888888;
+	}
+#header {
+	border-style: solid;
+	border-color: #DCDCDC;
+	background-color: #DCDCDC;
+	}
+#left-content {
+	float: left;
+	width:50%;
+	border-right: 2px outset #DCDCDC;
+	}
+#weather {
+	font-family:Microsoft JhengHei;
+	margin-bottom: 50px;
+}
+#temprature {
+	font-family:Microsoft JhengHei;
+	margin-bottom: 50px;
+}
+#right-content {
+	float: left;
+	width: 100%;
+}
+#right-content-in {
+	float: left;
+	width: 50%;
+	padding-left: 25%;
+	padding-top:40px;
+	text-align:left;
+	font-family: Microsoft JhengHei;
+}
+#right-content-out {
+	float: left;
+	width: 50%;
+	padding-left: 10%;
+	padding-top: 40px;
+	text-align:left;
+}
+#right-content-down{
+	height:100px;
+	clear: both;
+	padding-top: 30px;
+}
+#dustlinechart {
+	margin:0px auto;
+}
+#mq2linechart {
+	margin:0px auto;
+}
+#mq9linechart {
+	margin:0px auto;
+}
+#dustprofile {
+	float: left;
+	border-style: solid;
+	border-color: #FFAC55;
+	border-width:3px;
+}
+#leftbody {
+	float: left;
+	/*background-color: #F5F5F5;*/
+	border-right: 2px outset #DCDCDC;
+	width: 20%;
+	height: 1350px;
+	}
+#type{
+	list-style-type: none;
+	margin-top: 5%;
+	padding: 0;
+	overflow: hidden;
+	background-color: #FFFFFF;
+	background-color: #F5F5F5;
+	}
+#type li{
+	float: left;
+	margin-left: 20%;
+	background-color: #F5F5F5;
+	}
+#type li a {
+	display: block;
+	color: black;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+	}
+#type li a:hover {
+	background-color: #888888;
+	}
+#search {
+	margin-top: 10%;
+}
+#checkbox {
+	margin-left: 30%;
+	margin-top: 10%;
+	text-align: left;
+	}
+#mainbody {
+	float: left;
+	//border-style: solid;
+	width: 70%;
+	height:100%;
+	}
+#map{
+	width: 800px;
+	height: 500px;
+	margin: 0% auto;
+	margin-bottom: 2%;
+}
+table{
+	background-color:#CCEEFF;
+}
+table tr:nth-child(1){
+	background-color:99BBFF;
+}
+table tr:nth-child(even) {
+	background: #CCDDFF;
+}
+table tr:nth-child(odd) {
+	background: #FFF;
+}
